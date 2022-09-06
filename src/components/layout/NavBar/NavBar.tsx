@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { PAGE_ROUTES } from "../../../containers";
 import LoggedInNavBar from "./LoggedInNavBar/LoggedInNavBar";
 import './NavBar.scss';
+import { Profile } from "./Profile/Profile";
 
 const logo  = require('./logo.png');
 
@@ -20,9 +21,7 @@ export function NavBar() {
                 {isAuthenticated && <>
                     <LoggedInNavBar />
                 </>}
-                {!isAuthenticated && <>
-                    <li className="menu-item" onClick={onSignInClick}>Sign In</li>
-                </>}
+                <Profile />
             </ul>
         </nav>
     )
@@ -32,6 +31,6 @@ export function NavBar() {
     }
 
     function onSignInClick() {
-        return loginWithRedirect({redirectUri: window.location.origin});
+        return 
     }
 }

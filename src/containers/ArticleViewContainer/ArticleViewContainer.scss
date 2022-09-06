@@ -55,4 +55,11 @@ $desc-size: 1.333rem;
             flex: 1 1 auto;
         }
     }
+
+    pre {
+        white-space: break-spaces;
+        font-family: inherit;
+        margin-bottom: 10px;
+        font-size: 1.15rem;
+    }
 }

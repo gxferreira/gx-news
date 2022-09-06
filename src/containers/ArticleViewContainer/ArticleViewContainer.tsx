@@ -29,7 +29,9 @@ export function ArticleViewContainer() {
             <div className="article-description">
                 {article.smallDescription}
             </div>
-            <p>{article.content}</p>
+            <pre>
+                {article.content}
+            </pre>
             
             <div className="edit-button-container">
                 {(currentUser?.userAuth0Id === article.user) && 

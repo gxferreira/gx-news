@@ -16,13 +16,8 @@ function LoggedInNavBar() {
                 </button>
             </li>
             <li className="menu-item" onClick={onMyBookmarks}>My Bookmarks</li>
-            <li className="menu-item" onClick={onLogOutClick}>Log Out</li>
         </>
     )
-
-    function onLogOutClick() {
-        logout({returnTo: window.location.origin})
-    }
 
     function onMyBookmarks() {
         navigate(PAGE_ROUTES.MY_BOOKMARKS);

@@ -36,6 +36,7 @@ export function ArticleSubmission(
                 value={submissionFormData.smallDescription}/>
 
             <Select name="category" label="Category" options={getCategoryOptions()}
+                value={submissionFormData.category}
                 onChange={onFormElementChange}
             />
             
