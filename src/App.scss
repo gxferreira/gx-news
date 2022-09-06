@@ -1,0 +1,19 @@
+.App {
+  height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 20px;
+
+  header {
+    flex: 0 0 auto;
+  }
+
+  main {
+    flex: 1 1 auto;
+  }
+
+  footer {
+    flex: 0 0 auto;
+  }
+}

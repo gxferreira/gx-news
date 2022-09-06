@@ -1,0 +1,11 @@
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    gap: 30px;
+}
+
+.no-articles {
+    background-color: #dedede;
+    padding: 10px;
+    font-size: 1.2em;
+}

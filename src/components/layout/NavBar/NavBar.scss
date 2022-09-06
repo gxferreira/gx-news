@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    max-height: 90px;
+
+    .logo-container {
+        flex: 1 1 auto;
+        cursor: pointer;
+
+        img {
+            max-height: 100%;
+            width: auto;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .menu-item {
+            font-weight: bold;
+            padding: 20px;
+            cursor: pointer;
+        }
+    }
+}
