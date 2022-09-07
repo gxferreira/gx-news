@@ -1,6 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an article reader in **React/Typescript** like Medium created for practice purposes.
 
-## Available Scripts
+To focus on learning React, the following choices were made:
+- `Auth0` was chosen for user/session management;
+- `localStorage` was used to store articles in a stringified collection;
+- `React Context` was used to state management related to user (including bookmarks)
+
+## Auth0 Setup
+
+Since the project is using `Auth0`, it's necessary to have an Auth0 application and it's setting must be placed in the file `src/auth0.settings.ts`.
+ 
+
+## How to Run
+
+## Future Improvements
+
+- Load images for articles;
+- Support to Administrator Users;
+- 
+ 
 
 In the project directory, you can run:
 
