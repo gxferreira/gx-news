@@ -1,50 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an article reader in **React/Typescript** like Medium created for practice purposes.
 
-## Available Scripts
+To focus on learning React, the following choices were made:
+- `Auth0` for user/session management;
+- `localStorage` for articles storage using a stringified collection;
+- `React Context` for state management related to user (including bookmarks);
+- `Tailwind CSS` for CSS Reset and direct styling of some components (for some cases, plain CSS is used).
+
+To create the project with Typescript and Tailwind CSS setup, [this Create React App template](https://github.com/ericgibby/cra-template-craco-tailwindcss-typescript) was used.
+
+## Features
+
+- `Home page` lists all published articles (to access it from anywhere click on the "GX" logo);
+- In `Home page`, users can filter by the categories `Engineering`, `Marketing` and `Design`;
+- In the the upper right corner, the user can login (through `Auth0`);
+- **Logged users** are able to create **New Articles** that can be a draft or published one;
+- **Drafted articles** will be only available to their authors;
+- **Logged users** can bookmark articles to read later.
+
+
+## Auth0 Setup
+
+Since the project is using `Auth0`, it's necessary to have an Auth0 application and its settings must be placed in the file `src/auth0.settings.ts`.
+
+A model for the settings file can be found [here](/auth0-sample.settings.ts), contact me for help.
+
+## How to Run
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn install`
+
+To install de dependencies using **yarn**.
+
+### `yarn start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-
 ## Future Features
 
-- Upload article's image
-- 
+- Load images for articles;
+- Support to Administrator Users;
+- Articles pages;
