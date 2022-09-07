@@ -10,7 +10,12 @@ To create the project with Typescript and Tailwind CSS setup, [this Create React
 
 ## Features
 
-- In the home pages, the articles are listed (to access it from anywhere click on the "GX" logo);
+- `Home page` lists all published articles (to access it from anywhere click on the "GX" logo);
+- In `Home page`, users can filter by the categories `Engineering`, `Marketing` and `Design`;
+- In the the upper right corner, the user can login (through `Auth0`);
+- **Logged users** are able to create **New Articles** that can be a draft or published one;
+- **Drafted articles** will be only available to their authors;
+- **Logged users** can bookmark articles to read later.
 
 
 ## Auth0 Setup
@@ -36,3 +41,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 - Load images for articles;
 - Support to Administrator Users;
+- Articles pages;
